@@ -1,0 +1,11 @@
+- name: Install fonts
+  pacman:
+    state: latest
+    executable: paru
+    name:
+      - apple-fonts
+      - nerd-fonts-meta
+      - nerd-fonts-sf-mono
+      - noto-fonts
+      - noto-fonts-cjk
+      - noto-fonts-emoji

@@ -1,0 +1,19 @@
+- name: System setup
+  hosts: 127.0.0.1
+  connection: local
+  gather_facts: false
+  become: true
+
+  pre_tasks:
+    - name: Rustup setup
+      shell: rustup default stable
+
+  tasks:
+    - name: Install paru
+      import_tasks: playbooks/paru.yml
+
+    - name: Install packages
+      import_tasks: playbooks/packages.yml
+
+    - name: Test
+      import_tasks: playbooks/test.yml

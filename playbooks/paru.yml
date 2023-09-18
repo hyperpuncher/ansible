@@ -1,0 +1,10 @@
+- name: Clone paru repository
+  git:
+    repo: https://aur.archlinux.org/paru.git
+    dest: "{{ home }}/paru"
+
+- name: Change directory to paru
+  shell: cd "{{ home }}/paru"
+
+- name: Build and install paru package
+  shell: makepkg -si

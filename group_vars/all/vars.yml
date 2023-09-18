@@ -1,0 +1,5 @@
+user: "{{ lookup('ansible.builtin.env', 'USER') }}"
+home: "{{ lookup('ansible.builtin.env', 'HOME') }}"
+
+packages:
+  - stow

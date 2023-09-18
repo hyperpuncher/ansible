@@ -1,0 +1,11 @@
+- name: Install AMD drivers
+  pacman:
+    state: latest
+    executable: paru
+    name:
+      - lib32-libva-mesa-driver
+      - lib32-mesa
+      - lib32-vulkan-radeon
+      - libva-mesa-driver
+      - mesa
+      - vulkan-radeon

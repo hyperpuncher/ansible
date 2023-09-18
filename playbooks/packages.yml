@@ -1,0 +1,5 @@
+- name: Install packages
+  pacman:
+    state: latest
+    executable: paru
+    name: "{{ packages }}"

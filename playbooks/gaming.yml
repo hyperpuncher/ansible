@@ -1,0 +1,10 @@
+- name: Install gaming packages
+  pacman:
+    state: latest
+    name:
+      - gamemode
+      - lib32-gamemode
+      - mangohud
+      - proton-ge-custom-bin
+      - steam
+      - winetricks
