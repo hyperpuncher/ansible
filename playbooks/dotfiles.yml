@@ -2,3 +2,6 @@
   git:
     repo: "git@github.com:hyperpuncher/dotfiles.git"
     dest: "{{ home }}/dotfiles"
+
+- name: Stow dotfiles
+  shell: cd ~/dotfiles && stow -v --no-folding "{{ stow_folders }}"
