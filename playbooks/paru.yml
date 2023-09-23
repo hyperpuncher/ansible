@@ -4,7 +4,10 @@
     dest: "{{ home }}/paru"
 
 - name: Change directory to paru
-  shell: cd "{{ home }}/paru"
+  shell: cd ~/paru
 
 - name: Build and install paru package
   shell: makepkg -si
+
+- name: Cleanup
+  shell: cd && rm -r ~/paru
