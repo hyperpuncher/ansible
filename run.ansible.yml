@@ -2,7 +2,6 @@
   hosts: 127.0.0.1
   connection: local
   gather_facts: false
-  become: true
 
   pre_tasks:
     - name: Copy SSH keys
@@ -18,6 +17,7 @@
       shell: source ~/.bash_profile
 
     - name: Pacman setup
+      become: true
       import_tasks: playbooks/pacman.yml
 
   tasks:
@@ -34,9 +34,11 @@
       import_tasks: playbooks/amd-drivers.yml
 
     - name: System setup
+      become: true
       import_tasks: playbooks/system.yml
 
     - name: Change login manager
+      become: true
       import_tasks: playbooks/greetd.yml
 
     - name: Change theme
