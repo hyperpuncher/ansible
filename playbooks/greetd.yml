@@ -1,5 +1,4 @@
 - name: Enable greetd
-  become: true
   shell: systemctl enable greetd.service
 
 - name: Change to tuigreet
@@ -9,5 +8,4 @@
     line: command = "tuigreet --window-padding 2 --asterisks --remember --remember-session --time --width 50 --cmd Hyprland"
 
 - name: Change permissions
-  become: true
   shell: chmod -R go+r /etc/greetd
