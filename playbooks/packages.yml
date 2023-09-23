@@ -2,4 +2,5 @@
   pacman:
     state: latest
     executable: paru
+    update_cache: true
     name: "{{ packages }}"
