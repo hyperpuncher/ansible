@@ -12,5 +12,8 @@
 - name: Install theme
   shell: cd ~/colloid && ./install.sh -t pink -c dark -s compact -l --tweaks black rimless normal -d ~/.local/share/themes
 
+- name: Cleanup
+  shell: cd && rm -rf ~/colloid
+
 - name: Change folder color
   shell: papirus-folders -C pink --theme Papirus-Dark
