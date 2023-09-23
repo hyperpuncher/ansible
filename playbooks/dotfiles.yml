@@ -4,5 +4,12 @@
     dest: "{{ home }}/dotfiles"
     accept_hostkey: true
 
+- name: Remove bash profile
+  shell: rm ~/.bash_profile
+
+- name: Change directory
+  shell: cd ~/dotfiles
+
 - name: Stow dotfiles
-  shell: cd ~/dotfiles && stow -v --no-folding "{{ stow_folders }}"
+  shell: "stow -Rv --no-folding {{ item }}"
+  loop: "{{ stow_folders }}"
