@@ -27,6 +27,9 @@
     - name: Install packages
       import_tasks: playbooks/packages.yml
 
+    - name: Install fonts
+      import_tasks: playbooks/fonts.yml
+
     - name: Install AMDGPU drivers
       import_tasks: playbooks/amd-drivers.yml
 
