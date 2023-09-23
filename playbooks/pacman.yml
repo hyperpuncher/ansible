@@ -1,0 +1,20 @@
+- name: Enable color
+  lineinfile:
+    path: /etc/pacman.conf
+    search_string: "#Color"
+    line: "Color"
+
+- name: Enable verbose
+  lineinfile:
+    path: /etc/pacman.conf
+    search_string: "#VerbosePkgLists"
+    line: "VerbosePkgLists"
+
+- name: Enable parallel downloads
+  lineinfile:
+    path: /etc/pacman.conf
+    search_string: "#ParallelDownloads = 5"
+    line: "ParallelDownloads = 20"
+
+- name: Update mirrors
+  shell: curl -s "https://archlinux.org/mirrorlist/?country=BY&country=DE&country=LV&country=LT&country=NL&country=PL&country=RU&protocol=http&protocol=https&ip_version=4&use_mirror_status=on" | sed -e s/^#Server/Server/ -e /^#/d | rankmirrors -n 5 - | sudo tee /etc/pacman.d/mirrorlist

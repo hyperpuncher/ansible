@@ -1,0 +1,16 @@
+- name: Install deps
+  pacman:
+    state: latest
+    executable: paru
+    name: gtk-engine-murrine sassc
+
+- name: Clone colloid theme
+  git:
+    repo: https://github.com/vinceliuice/Colloid-gtk-theme
+    dest: "{{ home }}/colloid"
+
+- name: Install theme
+  shell: cd ~/colloid && ./install.sh -t pink -c dark -s compact -l --tweaks black rimless normal -d ~/.local/share/themes
+
+- name: Change folder color
+  shell: papirus-folders -C pink --theme Papirus-Dark
