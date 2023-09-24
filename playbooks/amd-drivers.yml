@@ -1,8 +1,6 @@
 - name: Install AMDGPU drivers
   kewlfft.aur.aur:
     use: paru
-    state: latest
-    update_cache: yes
     name:
       - lib32-libva-mesa-driver
       - lib32-mesa

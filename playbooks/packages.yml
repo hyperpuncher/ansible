@@ -1,6 +1,4 @@
 - name: Install packages
   kewlfft.aur.aur:
     use: paru
-    state: latest
-    update_cache: yes
     name: "{{ packages }}"

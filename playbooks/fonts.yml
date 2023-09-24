@@ -1,8 +1,6 @@
 - name: Install fonts
   kewlfft.aur.aur:
     use: paru
-    state: latest
-    update_cache: yes
     name:
       - apple-fonts
       - nerd-fonts-meta

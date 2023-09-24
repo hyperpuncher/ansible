@@ -1,8 +1,6 @@
 - name: Install gaming packages
   kewlfft.aur.aur:
     use: paru
-    state: latest
-    update_cache: yes
     name:
       - gamemode
       - lib32-gamemode
