@@ -1,7 +1,9 @@
 - name: Install deps
   kewlfft.aur.aur:
     use: paru
-    name: gtk-engine-murrine sassc
+    name:
+      - gtk-engine-murrine
+      - sassc
 
 - name: Clone colloid theme
   git:
