@@ -4,6 +4,7 @@ home: "{{ lookup('ansible.builtin.env', 'HOME') }}"
 packages:
   - android-file-transfer
   - android-tools
+  - aria2
   - ansible-lint
   - anydesk-bin
   - bat
