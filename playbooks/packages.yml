@@ -1,6 +1,6 @@
 - name: Install packages
-  pacman:
+  kewlfft.aur.aur:
+    use: paru
     state: latest
-    executable: paru
-    update_cache: true
+    update_cache: yes
     name: "{{ packages }}"

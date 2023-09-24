@@ -1,7 +1,8 @@
 - name: Install fonts
-  pacman:
+  kewlfft.aur.aur:
+    use: paru
     state: latest
-    executable: paru
+    update_cache: yes
     name:
       - apple-fonts
       - nerd-fonts-meta

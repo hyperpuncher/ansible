@@ -20,10 +20,10 @@
       become: true
       import_tasks: playbooks/pacman.yml
 
-  tasks:
     - name: Install paru
       import_tasks: playbooks/paru.yml
 
+  tasks:
     - name: Install packages
       import_tasks: playbooks/packages.yml
 
