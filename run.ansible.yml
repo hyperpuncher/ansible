@@ -14,7 +14,7 @@
       import_tasks: playbooks/dotfiles.yml
 
     - name: Source env
-      shell: source ~/.bash_profile
+      environment: "{{ env_vars }}"
 
     - name: Pacman setup
       become: true
