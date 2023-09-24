@@ -122,7 +122,7 @@ packages:
   - slurp
   - solaar
   - solvespace
-  - speedtest-rs-bin
+  - speedtest-go
   - spotify-edge
   - telegram-desktop
   - thorium-browser-bin
