@@ -1,12 +1,26 @@
 user: "{{ lookup('ansible.builtin.env', 'USER') }}"
 home: "{{ lookup('ansible.builtin.env', 'HOME') }}"
 
+essential:
+  - greetd-tuigreet
+  - hyprland
+  - kitty
+  - rofi-lbonn-wayland-git
+
+fonts:
+  - noto-fonts
+  - noto-fonts-cjk
+  - noto-fonts-emoji
+  - ttf-cascadia-code-nerd
+  - ttf-jetbrains-mono-nerd
+  - ttf-ubuntu-mono-nerd
+
 packages:
   - android-file-transfer
   - android-tools
-  - aria2
   - ansible-lint
   - anydesk-bin
+  - aria2
   - bat
   - bibata-cursor-theme
   - blueman
@@ -33,6 +47,7 @@ packages:
   - fd
   - ffmpeg
   - figlet-fonts-extra
+  - file-roller
   - firefox
   - fnm
   - font-manager
@@ -45,17 +60,14 @@ packages:
   - gnome-disk-utility
   - gnome-keyring
   - gparted
-  - greetd-tuigreet
   - grim
   - gvfs
   - helvum
-  - hyprland
   - hyprpaper
   - hyprpicker
   - imagemagick
   - inkscape
   - jq
-  - kitty
   - kvantum
   - lazydocker
   - lazygit
@@ -107,12 +119,11 @@ packages:
   - qt5ct
   - qt6-wayland
   - qt6ct
-  - qview
   - quickemu
+  - qview
   - ripgrep
   - rofi-calc
   - rofi-emoji
-  - rofi-lbonn-wayland-git
   - rofi-rbw
   - shell-gpt
   - signal-desktop
@@ -126,7 +137,6 @@ packages:
   - thunar
   - thunar-archive-plugin
   - thunar-volman
-  - file-roller
   - tldr
   - transmission-gtk
   - udiskie
