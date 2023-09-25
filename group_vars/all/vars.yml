@@ -51,6 +51,7 @@ packages:
   - firefox
   - fnm
   - font-manager
+  - fx
   - fzf
   - gammastep
   - gdu
