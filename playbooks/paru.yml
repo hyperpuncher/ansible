@@ -1,10 +1,6 @@
-- name: Clone paru repository
-  git:
-    repo: https://aur.archlinux.org/paru.git
-    dest: "{{ home }}/paru"
-
-- name: Build and install paru package
-  shell: cd ~/paru && makepkg -si --noconfirm
-
-- name: Cleanup
-  shell: cd && rm -rf ~/paru
+- name: Install paru
+  kewlfft.aur.aur:
+    name: paru
+    use: makepkg
+  become: true
+  become_user: "{{ user }}"
