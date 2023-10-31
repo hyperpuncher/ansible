@@ -115,6 +115,7 @@ packages:
   - python-tabulate
   - python-wxpython
   - qemu-full
+  - qrencode
   - qt5-imageformats
   - qt5-wayland
   - qt5ct
@@ -133,6 +134,7 @@ packages:
   - solvespace
   - speedtest-go
   - spotify-edge
+  - sunshine
   - telegram-desktop
   - thorium-browser-bin
   - thunar
