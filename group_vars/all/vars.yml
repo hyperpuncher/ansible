@@ -19,7 +19,6 @@ packages:
   - android-file-transfer
   - android-tools
   - ansible-lint
-  - anydesk-bin
   - aria2
   - bat
   - bibata-cursor-theme
@@ -27,7 +26,7 @@ packages:
   - bluez-utils
   - brillo
   - btop
-  - bunjs-bin
+  - bun-bin
   - c-lolcat
   - cliphist
   - corectrl
@@ -127,6 +126,7 @@ packages:
   - rofi-calc
   - rofi-emoji
   - rofi-rbw
+  - rustdesk-bin
   - shell-gpt
   - signal-desktop
   - slurp
