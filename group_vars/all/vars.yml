@@ -40,7 +40,6 @@ packages:
   - downgrade
   - dragon-drop
   - dunst
-  - easyeffects
   - exfatprogs
   - eza
   - fd
@@ -67,6 +66,7 @@ packages:
   - hyprpicker
   - imagemagick
   - inkscape
+  - jamesdsp
   - jq
   - kvantum
   - lazydocker
