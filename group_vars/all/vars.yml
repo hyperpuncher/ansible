@@ -5,7 +5,7 @@ essential:
   - greetd-tuigreet
   - hyprland
   - kitty
-  - rofi-lbonn-wayland-git
+  - rofi-lbonn-wayland
 
 fonts:
   - noto-fonts
@@ -147,7 +147,6 @@ packages:
   - upscayl-bin
   - ventoy-bin
   - vial-appimage
-  - visual-studio-code-bin
   - vscodium-bin
   - waybar
   - wget
