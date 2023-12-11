@@ -82,6 +82,7 @@ packages:
   - mumble
   - nasc
   - ncspot-bin
+  - network-manager-applet
   - nfs-utils
   - npm
   - nvtop
