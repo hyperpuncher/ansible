@@ -11,7 +11,6 @@ fonts:
   - noto-fonts
   - noto-fonts-cjk
   - noto-fonts-emoji
-  - otf-geist-mono-nerd
   - ttf-cascadia-code-nerd
   - ttf-jetbrains-mono-nerd
   - ttf-ubuntu-mono-nerd
