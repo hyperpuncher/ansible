@@ -137,13 +137,13 @@ packages:
   - spotify-edge
   - sunshine
   - telegram-desktop
-  - thorium-browser-bin
   - thunar
   - thunar-archive-plugin
   - thunar-volman
   - tldr
   - transmission-gtk
   - udiskie
+  - ungoogled-chromium-bin
   - unzip
   - upscayl-bin
   - ventoy-bin
