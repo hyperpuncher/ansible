@@ -140,7 +140,7 @@ packages:
   - thunar
   - thunar-archive-plugin
   - thunar-volman
-  - tldr
+  - tlrc-bin
   - transmission-gtk
   - udiskie
   - ungoogled-chromium-bin
