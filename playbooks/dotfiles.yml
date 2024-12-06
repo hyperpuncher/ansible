@@ -1,8 +1,8 @@
 - name: Clone dotfiles
   git:
-    repo: "git@github.com:hyperpuncher/dotfiles.git"
-    dest: "{{ home }}/dotfiles"
-    accept_hostkey: true
+      repo: "git@github.com:hyperpuncher/dotfiles.git"
+      dest: "{{ home }}/dotfiles"
+      accept_hostkey: true
 
 - name: Remove bash profile if exists
   shell: "[ -f ~/.bash_profile ] && rm ~/.bash_profile || true"

@@ -1,11 +1,11 @@
 - name: Install essential packages
   tags: essential
   kewlfft.aur.aur:
-    use: paru
-    name: "{{ essential }}"
+      use: paru
+      name: "{{ essential }}"
 
 - name: Install packages
   tags: packages
   kewlfft.aur.aur:
-    use: paru
-    name: "{{ packages }}"
+      use: paru
+      name: "{{ packages }}"

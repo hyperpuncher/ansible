@@ -3,9 +3,9 @@
 
 - name: Change to tuigreet
   lineinfile:
-    path: /etc/greetd/config.toml
-    regexp: "^command"
-    line: command = "tuigreet --window-padding 2 --asterisks --remember --remember-session --time --width 50 --cmd Hyprland"
+      path: /etc/greetd/config.toml
+      regexp: "^command"
+      line: command = "tuigreet --window-padding 2 --asterisks --remember --remember-session --time --width 50 --cmd Hyprland"
 
 - name: Change permissions
   shell: chmod -R go+r /etc/greetd

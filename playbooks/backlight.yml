@@ -1,11 +1,11 @@
 - name: Add ddcci_backlight module
   lineinfile:
-    create: true
-    path: /etc/modules-load.d/backlight.conf
-    line: ddcci_backlight
+      create: true
+      path: /etc/modules-load.d/backlight.conf
+      line: ddcci_backlight
 
 - name: Add user to video group
   user:
-    name: "{{ user }}"
-    groups: video
-    append: true
+      name: "{{ user }}"
+      groups: video
+      append: true

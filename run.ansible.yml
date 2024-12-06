@@ -4,41 +4,41 @@
   gather_facts: false
 
   pre_tasks:
-    - name: Copy SSH keys
-      import_tasks: playbooks/ssh.yml
+      - name: Copy SSH keys
+        import_tasks: playbooks/ssh.yml
 
-    - name: Rustup setup
-      shell: rustup default stable
+      - name: Rustup setup
+        shell: rustup default stable
 
-    - name: Stow dotfiles
-      import_tasks: playbooks/dotfiles.yml
+      - name: Stow dotfiles
+        import_tasks: playbooks/dotfiles.yml
 
-    - name: Source env
-      command: env
-      environment: "{{ env_vars }}"
+      - name: Source env
+        command: env
+        environment: "{{ env_vars }}"
 
-    - name: Pacman setup
-      become: true
-      import_tasks: playbooks/pacman.yml
+      - name: Pacman setup
+        become: true
+        import_tasks: playbooks/pacman.yml
 
-    - name: Install paru
-      import_tasks: playbooks/paru.yml
+      - name: Install paru
+        import_tasks: playbooks/paru.yml
 
   tasks:
-    - name: Install packages
-      import_tasks: playbooks/packages.yml
+      - name: Install packages
+        import_tasks: playbooks/packages.yml
 
-    - name: Install AMDGPU drivers
-      import_tasks: playbooks/amd-drivers.yml
+      - name: Install AMDGPU drivers
+        import_tasks: playbooks/amd-drivers.yml
 
-    - name: System setup
-      become: true
-      import_tasks: playbooks/system.yml
+      - name: System setup
+        become: true
+        import_tasks: playbooks/system.yml
 
-    - name: Change login manager
-      become: true
-      import_tasks: playbooks/greetd.yml
+      - name: Change login manager
+        become: true
+        import_tasks: playbooks/greetd.yml
 
-    - name: Setup ddcci_backlight
-      become: true
-      import_tasks: playbooks/backlight.yml
+      - name: Setup ddcci_backlight
+        become: true
+        import_tasks: playbooks/backlight.yml

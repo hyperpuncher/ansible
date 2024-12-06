@@ -1,6 +1,6 @@
 - name: Install paru
   kewlfft.aur.aur:
-    name: paru
-    use: makepkg
+      name: paru
+      use: makepkg
   become: true
   become_user: "{{ user }}"
