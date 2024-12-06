@@ -4,12 +4,6 @@
     use: paru
     name: "{{ essential }}"
 
-- name: Install fonts
-  tags: fonts
-  become: true
-  community.general.pacman:
-    name: "{{ fonts }}"
-
 - name: Install packages
   tags: packages
   kewlfft.aur.aur:

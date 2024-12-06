@@ -2,9 +2,8 @@
   kewlfft.aur.aur:
     use: paru
     name:
-      - lib32-libva-mesa-driver
       - lib32-mesa
-      - lib32-vulkan-radeon
-      - libva-mesa-driver
+      - lib32-opencl-rusticl-mesa
       - mesa
+      - opencl-rusticl-mesa
       - vulkan-radeon

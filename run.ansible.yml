@@ -39,9 +39,6 @@
       become: true
       import_tasks: playbooks/greetd.yml
 
-    - name: Change theme
-      import_tasks: playbooks/theme.yml
-
     - name: Setup ddcci_backlight
       become: true
       import_tasks: playbooks/backlight.yml
