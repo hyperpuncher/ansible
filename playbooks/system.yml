@@ -3,3 +3,6 @@
 
 - name: Change shell to zsh
   shell: chsh -s $(which zsh)
+
+- name: Font settings
+  command: ln -s /usr/share/fontconfig/conf.avail/10-hinting-none.conf /etc/fonts/conf.d/
