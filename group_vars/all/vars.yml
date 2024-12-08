@@ -93,7 +93,6 @@ packages:
     - greetd-tuigreet
     - grim
     - gst-plugin-pipewire
-    - gtk-engine-murrine
     - gum
     - gvfs
     - gvfs-smb
@@ -310,6 +309,7 @@ packages:
     - uv
     - ventoy-bin
     - vial-appimage
+    - video-trimmer
     - virt-manager
     - vscode-html-languageserver
     - vulkan-radeon
@@ -333,7 +333,6 @@ packages:
     - xray
     - yaml-language-server
     - yarn
-    - yaru-gtk-theme
     - yazi
     - yt-dlp
     - zip
