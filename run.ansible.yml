@@ -38,7 +38,3 @@
       - name: Change login manager
         become: true
         import_tasks: playbooks/greetd.yml
-
-      - name: Setup ddcci_backlight
-        become: true
-        import_tasks: playbooks/backlight.yml

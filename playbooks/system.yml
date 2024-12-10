@@ -6,3 +6,15 @@
 
 - name: Font settings
   command: ln -s /usr/share/fontconfig/conf.avail/10-hinting-none.conf /etc/fonts/conf.d/
+
+- name: Add ddcci_backlight module
+  lineinfile:
+      create: true
+      path: /etc/modules-load.d/backlight.conf
+      line: ddcci_backlight
+
+- name: Add user to video group
+  user:
+      name: "{{ user }}"
+      groups: video
+      append: true
