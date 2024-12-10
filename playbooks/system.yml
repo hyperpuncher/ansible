@@ -2,7 +2,7 @@
   command: localectl set-locale LC_TIME=en_IE.UTF-8
 
 - name: Change shell to zsh
-  shell: chsh -s $(which zsh)
+  command: chsh -s /usr/bin/zsh
 
 - name: Font settings
   command: ln -s /usr/share/fontconfig/conf.avail/10-hinting-none.conf /etc/fonts/conf.d/
