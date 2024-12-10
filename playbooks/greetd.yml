@@ -9,3 +9,14 @@
 
 - name: Change permissions
   shell: chmod -R go+r /etc/greetd
+
+- name: Auto keyring unlock on login
+  lineinfile:
+      path: /etc/pam.d/greetd
+      line: "auth optional pam_gnome_keyring.so"
+      insertafter: "auth       include      system-local-login"
+
+- name: Auto keyring unlock on login
+  lineinfile:
+      path: /etc/pam.d/greetd
+      line: "session optional pam_gnome_keyring.so auto_start"
