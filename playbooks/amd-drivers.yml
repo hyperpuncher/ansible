@@ -1,9 +1,0 @@
-- name: Install AMDGPU drivers
-  kewlfft.aur.aur:
-      use: paru
-      name:
-          - lib32-mesa
-          - lib32-opencl-rusticl-mesa
-          - mesa
-          - opencl-rusticl-mesa
-          - vulkan-radeon

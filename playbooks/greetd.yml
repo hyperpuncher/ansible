@@ -1,5 +1,5 @@
 - name: Enable greetd
-  shell: systemctl enable greetd.service
+  command: systemctl enable greetd.service
 
 - name: Change to tuigreet
   lineinfile:
@@ -8,7 +8,7 @@
       line: command = "tuigreet --window-padding 2 --asterisks --remember --remember-session --time --width 50 --cmd Hyprland"
 
 - name: Change permissions
-  shell: chmod -R go+r /etc/greetd
+  command: chmod -R go+r /etc/greetd
 
 - name: Auto keyring unlock on login
   lineinfile:
