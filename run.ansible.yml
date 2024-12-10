@@ -10,15 +10,16 @@
       - name: Rustup setup
         command: rustup default stable
 
+      - name: Install paru
+        become: true
+        import_tasks: playbooks/paru.yml
+
       - name: Stow dotfiles
         import_tasks: playbooks/dotfiles.yml
 
       - name: Source env
         command: env
         environment: "{{ env_vars }}"
-
-      - name: Install paru
-        import_tasks: playbooks/paru.yml
 
       - name: System setup
         become: true

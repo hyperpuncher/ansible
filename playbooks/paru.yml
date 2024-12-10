@@ -1,6 +1,14 @@
-- name: Install paru
-  kewlfft.aur.aur:
-      name: paru
-      use: makepkg
-  become: true
-  become_user: "{{ user }}"
+- name: Clone paru
+  git:
+      repo: "https://aur.archlinux.org/paru.git"
+      dest: "/tmp/paru"
+
+- name: Build and install paru
+  command: makepkg -si --noconfirm
+  args:
+      chdir: /tmp/paru
+  register: makepkg_output
+
+- name: Display makepkg output
+  debug:
+      var: makepkg_output.stdout_lines
